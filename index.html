@@ -5,26 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SkyFetch Weather Dashboard</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>SkyFetch</h1>
-
-    <!-- Search Section -->
-    <div class="search-section">
-      <input type="text" id="cityInput" placeholder="Enter city name">
+    <h1>SkyFetch Weather Dashboard</h1>
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city">
       <button id="searchBtn">Search</button>
     </div>
 
-    <!-- Weather Display -->
-    <div id="weatherDisplay"></div>
-
-    <!-- Loading Spinner -->
     <div id="loading" class="hidden">Loading...</div>
+    <div id="error" class="hidden">City not found!</div>
 
-    <!-- Error Message -->
-    <div id="error" class="error-message hidden"></div>
+    <div id="weather" class="weather hidden">
+      <h2 id="cityName"></h2>
+      <p id="description"></p>
+      <p id="temp"></p>
+      <img id="icon" src="" alt="Weather Icon">
+    </div>
+
+    <div id="forecast" class="forecast hidden"></div>
   </div>
 
   <script src="app.js"></script>
