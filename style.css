@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+#weather {
+    margin-top: 30px;
+}
+
+img {
+    width: 100px;
+}
