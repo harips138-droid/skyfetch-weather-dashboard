@@ -6,7 +6,7 @@ const errorDiv = document.getElementById('error');
 
 const API_KEY = 'YOUR_API_KEY_HERE'; // Replace with your OpenWeatherMap API key
 
-// Show/hide loading
+// Show/hide loadings
 function showLoading(show) {
   loading.classList.toggle('hidden', !show);
 }
